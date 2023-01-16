@@ -964,11 +964,11 @@ function actualizaFechaConsultoria(fechaAct, addMeses) {
 	}
 	
 	d.setMonth(d.getMonth() + meses);
-	if (d.getDay() == 6) {  //La fecha cae en Sábado hay que pasar la al primer lunes (+2 días)
+	if (d.getDay() == 6) {  //La fecha cae en Sábado hay que pasarla al primer lunes (+2 días)
 		d.setDate(d.getDate()+2);
 	}
 	
-	if (d.getDay() == 0) {  //La fecha cae en Domingo hay que pasar la al primer lunes (+1 días)
+	if (d.getDay() == 0) {  //La fecha cae en Domingo hay que pasarla al primer lunes (+1 días)
 		d.setDate(d.getDate()+1);
 	}
 	
