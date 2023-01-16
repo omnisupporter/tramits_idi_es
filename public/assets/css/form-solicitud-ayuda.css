@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: rgba(241, 241, 241, 1);
+  }
+
+dl, dd, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem!important;
+    /*margin-left: 1rem!important;*/
+}
+ul {
+  list-style-type: none;
+}
+section {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: .5rem .75rem .5rem .75rem;
+}
+
+#regForm {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 3rem;
+    width: 100%;
+    min-width: 300px;
+  }
+header .logo {
+    float: left;
+    width: 23%;
+    height: auto;
+    padding: .4rem .5rem;
+}
+.menu {
+  padding: 1.4rem 0;
+  margin-bottom: 2rem;
+}
+.menu div {
+  text-align: right;
+}
+.w3docs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-color: rgba(55, 154, 151, 1);
+}
+.main:hover input ~ .w3docs {
+  background-color: rgba(255, 165, 0, 1);
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-color: rgba(55, 154, 151, 1);
+  border-radius: 50%;
+}
+.container-radio:hover input ~ .checkmark {
+  background-color: rgba(255, 165, 0, 1);
+}
+fieldset {
+  min-width: 0;
+  padding: 1.3rem;
+  margin: 0;
+  border: 0;
+}
+h1 {
+    text-align: center;  
+  }
+h2 {
+  margin-bottom: 2rem!important;
+}
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid rgba(170, 170, 170, 1);
+  } 
+  select, input {
+    padding: .7rem;
+    margin: 1rem;
+    width: 100%;
+    font-size: 1em!important;
+    font-family: Raleway;
+    border: 2px solid rgba(209, 236, 241, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-backdrop {
+  position: inherit!important;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.invalid {
+    background-color: rgba(190, 0, 44, 1)!important;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+/* Mark input boxes that gets an OK on validation: */
+.valid {
+  background-color: rgba(55, 154, 151, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 0px solid rgba(0, 0, 0, 1);
+}  
+  
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  padding: 0;
+}
+
+.code {
+    font-size: 87.5%;
+    color: rgba(55, 154, 151, 1);;
+    word-break: break-word;
+}  
+.aviso {
+    background-color: rgba(190, 0, 44, 1) !important;
+    color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    text-align: left;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+.aviso-lbl {
+      background-color: rgba(0, 0, 0, 1) !important;
+      color: rgba(255, 255, 255, 1);
+      padding: .5rem;
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: 900;
+      }    
+#formbox {
+    width: calc(100%);
+    border: 1px solid rgba(55, 154, 151, 1);
+    background-color: rgba(249, 250, 251, 1);
+    padding: 1em 1.8em 1em 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    font-size: 2rem;
+    }    
+.formbox {
+    width: calc(100%);
+    border: 1px solid rgba(55, 154, 151, 1);
+    background-color: rgba(248, 249, 250, 1);
+    padding: 1em 1.8em 1em 1em;
+    margin-left: -0.5rem!important;
+    border-radius: 1rem;
+    font-size: 2rem;
+    }
+  .formbox:last-child{
+    margin-bottom: 2em!important;
+  }
+.container-radio {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }  
+.container-radio h6 {
+    font-size: 2rem;   
+    }
+.buttonAsistente {
+    background-color: rgba(55, 154, 151, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    font-family: Raleway;
+    cursor: pointer;
+    opacity: 1.0;
+    margin-right: .1rem;
+    border-radius: 1.0rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+  
+  .buttonAsistente:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: rgba(187, 187, 187, 1);
+  }
+  
+.stepContainer {
+  text-align:center;
+  margin-bottom: 1rem;
+}
+
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+    background-color: rgba(190, 0, 44, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 6px 3px 0 3px;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.9;
+  }
+
+  .container-radio-invalid {
+    background-color: rgba(190, 0, 44, 1);
+    color:rgba(255, 255, 255, 1);
+    padding: .3rem;
+}
+.container-radio-valid {
+  background-color: rgba(255, 255, 255, 1);
+  color:rgba(0, 0, 0, 1)
+}  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: rgba(255, 165, 0, 1);
+  }
+
+  .mainButtonContainer{
+    overflow:auto;
+  }
+  .buttonContainer {
+    float:right;
+    padding: .5rem 0;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(221, 72, 20, .8);
+    background-color: rgba(163, 212, 219, 1);
+    text-align: center;
+}

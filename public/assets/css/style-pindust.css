@@ -1,0 +1,1590 @@
+* {
+			transition: background-color 300ms ease, color 300ms ease;
+		}
+*:focus {
+			background-color: #a3d4db;
+			outline: none;
+		}
+button:hover {
+	cursor:pointer!important;
+}
+
+dl {
+			margin-top: 0!important;
+			margin-bottom: 1rem!important;
+			margin-left: 1rem!important;
+		  	}
+h4 {
+			font-size: 1rem!important;
+			}
+legend {
+				display: block;
+				padding-inline-start: 2px;
+				padding-inline-end: 2px;
+				border-width: initial;
+				border-style: none;
+				border-color: initial;
+				border-image: initial;
+				padding-top: 3rem!important;
+			}		
+a {
+  color: #000000 !Important;
+  font-weight: bold !Important;
+}
+a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.hidden-itramits {
+    display: none !important;
+}
+#enviar_docs:hover {
+	cursor: pointer;
+}
+.jumbotronItramits {
+	background-color: rgb(204, 201, 201);
+	color:rgba(0, 0, 0, 0.8);
+	padding: 1rem;
+	border-radius: 5px;
+	border:rgba(0, 0, 0, 0.8) solid 1px;
+	font-size: 2rem;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+		text-align: center;
+}
+.alert-info {
+    color: #fff;
+    background-color: #39c0ed;
+    border-color: #39c0ed;
+}
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+  input:required:invalid, input:focus:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+    -moz-box-shadow: none;
+  }
+  input:required:valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+		
+header {
+	padding: .4rem 0 0;
+}
+
+.header__formempresasils {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.header__formempresasils--logo {
+	text-align: left;
+}
+
+.header__formempresasils--documento {
+	text-align: right;
+}
+		.menu {
+			padding: .4rem 2rem;
+		}
+		.icono-salida {
+			font-size: 24px;
+			color: rgb(221 72 20 / 91%);
+		}
+		header ul {
+			border-bottom: 1px solid rgba(26, 25, 25, 1);
+			list-style-type: none;
+			margin-bottom: 2em;
+			overflow: hidden;
+			padding-bottom: 2em;
+			text-align: right;
+		}
+		header li a {
+			border-radius: 5px;
+			color: rgba(0, 0, 0, .5);
+			display: block;
+			/*height: 44px;*/
+			text-decoration: none;
+		}
+		header li.menu-item a {
+			border-radius: 5px;
+			margin: 5px 0;
+			padding: .4rem .65rem;
+		}
+		header li.menu-item a:hover,
+		header li.menu-item a:focus {
+			background-color: #b4cbd3;
+			border-radius: 0;
+			border-top-left-radius: 50% 50%;
+			border-bottom-left-radius: 50% 50%;
+			text-decoration: underline wavy rgba(255, 255, 255, 1.0);
+			color: #000;
+			font-weight: bold!important;
+		}
+		header .logo {
+			float: left;
+			height: 44px;
+			padding: .4rem .5rem;
+		}
+		header .menu-toggle {
+			display: none;
+			float: right;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		header .menu-toggle button {
+			background-color: rgb(221 72 20 / 91%);
+			border: none;
+			border-radius: 3px;
+			color: rgba(255, 255, 255, 1);
+			cursor: pointer;
+			font: inherit;
+			font-size: 1.3rem;
+			height: 36px;
+			padding: 0;
+			margin: 11px 0;
+			overflow: visible;
+			width: 40px;
+		}
+		header .menu-toggle button:hover,
+		header .menu-toggle button:focus {
+			background-color: rgba(221, 72, 20, .8);
+			color: rgba(255, 255, 255, .8);
+		}
+		header .heroe {
+			margin: 0 auto;
+			max-width: 1100px;
+			padding: 1rem 1.75rem 1.75rem 1.75rem;
+		}
+		header .heroe h1 {
+			font-size: 2.5rem;
+			font-weight: 500;
+		}
+		header .heroe h2 {
+			font-size: 1.5rem;
+			font-weight: 300;
+		}
+		header .heroe h5 {
+			font-size: 1.5rem;
+			font-weight: 100;
+		}		
+		section {
+			margin: 0 auto;
+			max-width: 1100px;
+			/*padding: 2.5rem 1.75rem 3.5rem 1.75rem;*/
+		}
+		section h1 {
+			margin-bottom: 2.5rem;
+		}
+		section h2 {
+			font-size: 120%;
+			line-height: 2.5rem;
+			padding-top: 1.5rem;
+		}
+		section pre {
+			background-color: rgba(247, 248, 249, 1);
+			border: 1px solid rgba(242, 242, 242, 1);
+			display: block;
+			margin: 2rem 0;
+			padding: 1rem 1.5rem;
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+		section code {
+			display: block;
+		}
+		section a {
+			color: rgba(221, 72, 20, 1);
+		}
+		section svg {
+			margin-bottom: -5px;
+			margin-right: 5px;
+			width: 25px;
+		}
+		.further {
+			background-color: rgba(247, 248, 249, 1);
+			border-bottom: 1px solid rgba(242, 242, 242, 1);
+			border-top: 1px solid rgba(242, 242, 242, 1);
+		}
+		.further h2:first-of-type {
+			padding-top: 0;
+		}
+		footer {
+			display: grid!important;
+			grid-template-columns: auto;
+			position: fixed;
+    		left: 0;
+    		bottom: 0;
+    		width: 100%;
+			/*padding: 1rem;*/
+			background-color: #a3d4db;
+			text-align: center;
+  			clear: both;
+		}
+
+		.unreadMails {
+			font-size: 1rem;
+		}  
+		footer .environment {
+			color: rgba(255, 255, 255, 1);
+			/*padding: 2rem 1.75rem;*/
+		}
+		.copyrights {
+			background-color: rgba(62, 62, 62, 1);
+			color: rgba(200, 200, 200, 1);
+			padding: 1rem 1.75rem;
+		}
+		@media (max-width: 559px) {
+			header ul {
+				padding: 0;
+			}
+			header .menu-toggle {
+				padding: 0 1rem;
+			}
+			header .menu-item {
+				background-color: rgba(244, 245, 246, 1);
+				border-top: 1px solid rgba(242, 242, 242, 1);
+				margin: 0 15px;
+				width: calc(100% - 30px);
+			}
+			header .menu-toggle {
+				display: block;
+			}
+			header .hidden {
+				display: none;
+			}
+			header li.menu-item a {
+				background-color: rgba(221, 72, 20, .1);
+			}
+			header li.menu-item a:hover,
+			header li.menu-item a:focus {
+				background-color: rgba(221, 72, 20, .7);
+				color: rgba(255, 255, 255, .8);
+			}
+		}
+
+.upload-docs-type-label{
+    padding: 0.3rem;
+    border: #000 1px solid;
+    border-radius: 0.3rem;
+    background-color: rgba(255, 165, 0, .5);
+    width: 8rem;
+    margin-top: 0.3rem!important;
+    margin-bottom: 0.3rem!important;
+    text-align: center;
+    color: #fff;
+}
+
+.ocultar {
+	display: none;
+	background-color: #000;
+}
+
+.form-group {
+    margin-bottom: .4rem !important;
+	/*border: rgba(255, 165, 0, .5) solid 1px;*/
+}
+
+#formbox {
+  width: 100%;             /* salvaguarda para navegadores que no reconocen calc() */
+  width: calc(100%);
+  border: 1px solid #1AB394;
+  background-color: #f8f9fa;
+  padding: 1em 1.8em 1em 1em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+/* ------------------------- RADIO BUTTONS --------------------------------------*/
+/* The container-radio */
+.container-radio {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+  background-color: #a3d4db;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+  background-color: orange;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+ 	top: 7px;
+	left: 7px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/* -------------------------------------------------------------------------------------------*/		
+/* ------------------------- CHECKBOXES ------------------------------------------------------*/	
+      .main {
+        display: block;
+        position: relative;
+        padding-left: 45px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      h1 {
+        color: orange !important;
+      }
+      /* Hiding the initial checkbox */
+      input[type=checkbox] {
+        visibility: hidden;
+      }
+      /* Creating a custom checkbox based on demand */
+      .w3docs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+      }
+      /* Specify the background color to be shown when hovering over checkbox */
+      .main:hover input ~ .w3docs {
+		background-color: #a3d4db;
+      }
+      /* Specify the background color to be shown when checkbox is active */
+      .main input:active ~ .w3docs {
+        background-color: white;
+      }
+      /* Specify the background color to be shown when checkbox is checked */
+      .main input:checked ~ .w3docs {
+        background-color: orange;
+      }
+      /* Checkmark to be shown in checkbox */
+      /* It is not be shown when not checked */
+      .w3docs:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      /* Display checkmark when checked */
+      .main input:checked ~ .w3docs:after {
+        display: block;
+      }
+      /* Styling the checkmark using webkit */
+      /* Rotated the rectangle by 45 degree and 
+      showing only two border to make it look
+      like a tickmark */
+      .main .w3docs:after {
+        left: 8px;
+        bottom: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+/* ---------------------------------------------------------------------------------------------------- */	
+/* ------------------------------------ Formulario ---------------------------------------------------- */	
+.enviararchivo_ver	{
+  display: block;
+  width: 100%;
+  padding: 25px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+}
+
+.btn-itramits {
+	width: 100%!important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+	white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem !important;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+	cursor: default!important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success-itramits {
+    color: #fff;
+    background-color:  rgb(2, 100, 2);
+    border-color: rgb(0, 0, 0);
+	opacity: .8;
+}
+.btn-success-itramits:hover {
+	opacity: 1.0;
+}
+
+.btn-primary-itramits {
+    color: #000;
+    background-color: #1AB394;
+    border-color: #1b5a29;
+	display: inline-block;
+    text-align: center;
+    white-space: wrap;
+    /* vertical-align: middle; */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem !important;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	width: 100% !important;
+	margin-bottom: .3rem;
+}
+
+.btn-primary-itramits:hover{
+	color: #fff!important;
+	text-decoration: none !important;
+}
+
+.btn-ver-itramits {
+    color: #270 !important;
+    background-color: #DFF2BF !important;
+    border-color: #1b5a29 !important;
+	font-weight: normal !important;
+    text-align: center;
+	white-space: break-spaces!important;
+}
+
+.fa-file-pdf-o-itramits:before {
+    content: "\f1c1";
+	padding: 2px;
+}
+.verSello{
+	padding: .4rem;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ------------------------------------ Expediente TABs ----------------------------------------------- */	
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  font-size: 1.1rem;
+  width: 16.66%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  /*color: white;*/
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.td_exped_fixed {
+	font-size:.8em; 
+	word-break: break-all;
+	width: 160px;
+}
+.td_exped {
+	font-size:.8em; 
+	word-break: break-all;
+}
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+/* ----------------------------------------------------------------------------------------------------- */
+/* ------------------------------------ labels --------------------------------------------------------- */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #fff;
+    background-color: #4F8A10;
+}
+.isa_warning {
+    color: #9F6000;
+   background-color: #FEEFB3;
+}
+.isa_error {
+    color: #fff;
+    background-color: #D8000C;
+}
+.isa_caducado {
+    color: #000000;
+    background-color: #8b8888;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i, .isa_caducado i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+.info-msg,
+.success-msg,
+.error-msg,
+.neutral-msg {
+	padding: 0.3rem 0.6rem;
+  	border-radius: .5rem;
+  	font-size: 1rem!important;
+  	width: 10rem;
+}
+.info-msg {
+  color: rgba(0, 85, 153, 1.0);
+  background-color: #BEF;
+  border: rgba(50, 62, 224, 1.0) 1px solid !important;
+  font-weight: bold !important;
+  width: 100% !important;
+  text-align: center;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+  border: #270 solid 1px;
+  padding: 0.3rem 0.6rem;
+  border-radius: .5rem;
+	font-size: 1rem!important;
+  text-align: center;
+  width: 100%;
+}
+.success-msg-justific {
+	border: #270 solid 2px;
+	width: 100% !important;
+	margin-bottom: .2rem;
+  }
+.warning-msg {
+  	color: #9F6000;
+  	background-color: #FEEFB3;
+  	border: #9F6000 solid 1px;
+  	padding: 0.3rem 0.6rem;
+	border-radius: .5rem;
+  	font-size: 1rem!important;
+	text-align: center;
+}
+.warning-msg-justific {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	border: #9F6000 solid 1px;
+	width: 100% !important;
+	margin-bottom: .2rem;
+  }
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: #D8000C solid 1px;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+.neutral-msg {
+	color: #000000;
+	background-color: transparent;
+	border: #000000 solid 1px;
+  }
+
+/*----------------------------------------- tooltip -------------------------------------------------*/
+.tooltip_idi {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  opacity: 1.0 !Important;
+  cursor: help;
+}
+
+.tooltip_idi .tooltiptext_idi {
+  visibility: hidden;
+  width: 995px;
+	font-size: .7em;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 1.0 !Important;
+  transition: opacity 0.8s;
+}
+
+.tooltip_idi .tooltiptext_idi::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip_idi:hover .tooltiptext_idi {
+  visibility: visible;
+  opacity: 1.0;
+  cursor: help;
+}
+
+/*------------------------------- tablas ------------------------------------------------*/
+.docsExpediente ol {
+	list-style-position: outside;
+	border: 1px solid #ffc107;
+}
+.docsExpediente ol li {
+	padding: 1rem;
+}
+.td_email {
+    word-break: break-all;
+}
+.form-control-itramits {
+    display: block;
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ffc107;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control-itramits-disabled {
+    display: block;
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+	border: 1px solid #cabece;
+	font-style: oblique;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.filter-area {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto 15%;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+  .filter-area {
+	grid-template-columns: auto;
+  }
+}
+
+.filter-area-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 0px solid rgba(0, 0, 0, 0.8);
+  	padding: 2px;
+  	text-align: left;
+}
+@media screen and (max-width: 625px) {
+.filter-area-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 0px solid rgba(0, 0, 0, 0.8);
+  	padding: 2px;
+	text-align: center;
+}
+}
+
+.lista-exped-wrapper {
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.lista-exped-wrapper {
+	display: inline-grid;
+	grid-template-columns: 100%;
+
+  	padding: 5px;
+	width: 100%;
+}
+}
+
+.header-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 20% 10% 10%;
+  	/*background-color: #fda500;*/
+  	padding-bottom: 10px;
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.header-wrapper {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #fda500;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+
+.header-wrapper-col {
+  	background-color: #abadae; /*rgba(255, 255, 255, 0.8);*/
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	text-align: left;
+}
+
+.detail-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 20% 10% 10%;
+  	background-color: #f1efef;
+  	padding: 2px;
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.detail-wrapper {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+	width: 100%;
+	text-align:left;
+
+}
+#fechaComletado::before {
+	content: "Data complet: ";
+		font-weight: bold;
+}
+#tipoTramite::before {
+	content: "Programa: ";
+		font-weight: bold;
+}
+#convocatoria::before {
+	content: "Convocatòria: ";
+		font-weight: bold;
+}
+#solicitante::before {
+	content: "Sol·licitant: ";
+		font-weight: bold;
+}
+#emailRepresentante::before {
+	content: "E·mail notificacions: ";
+		font-weight: bold;
+}
+#telRepresentante::before {
+	content: "Telèfon notificacions: ";
+		font-weight: bold;
+}
+#nombreConsultor::before {
+	content: "Consultor: ";
+	font-weight: bold;
+}
+}
+.detail-wrapper-col {
+  background-color: #1AB394; /*rgba(255, 255, 255, 0.8);*/
+  color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1.5rem;
+  font-size: 1em;
+  text-align: left;
+}
+.sort_ASC:after {
+	content: "▲";
+}
+.sort_DESC:after {
+	content: "▼";
+}
+.header-custodia-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 10% 10%;
+  	padding-bottom: 10px;
+	width: 100%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+@media screen and (max-width: 625px) {
+.header-custodia-wrapper {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #fda500;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+.detail-custodia-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 10% 10%;
+  	background-color: #f1efef;
+  	padding: 2px;
+	width: 100%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+@media screen and (max-width: 625px) {
+.detail-custodia-wrapper {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+	width: 100%;
+	text-align:left;
+
+}
+}
+
+.card-itramits {
+    display: grid;
+	grid-template-columns: 50% 25% 25%;
+	row-gap: .5rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f8f9fa;
+    background-clip: border-box;
+    border-bottom: 1px solid #706e6e;
+    border-radius: 0.00rem;
+    padding: .2rem;
+	margin-bottom: 0.4rem;
+}
+
+.card-itramits-body {
+	font-size: 1.3rem;
+}
+
+.wrapper-modelos-doc {
+	display: grid;
+  	grid-template-columns: auto auto;
+  	background-color: #ffffff;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+  	padding: 2px;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+	.wrapper-modelos-doc {
+		grid-template-columns: 100%;
+	}
+	}
+	
+/* ---------------------------- Colores estado expedientes ----------------------------------------*/
+.btn-itramits-aceptar {
+	background-color: #1ab394;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-aceptar:hover {
+	cursor: pointer;
+}
+.btn-itramits-info {
+	color: rgba(0, 0, 0, 1.0);
+	width: 95%;
+	font-size: 1.2em !Important;
+}
+.btn-itramits-info:hover {
+	border: 1px solid rgba(0, 0, 0, 1);
+	opacity: .5;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	
+}
+/* ----------------------------- detalle expediente -----------------------------------------------*/
+.general {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.solicitud_cab {
+	background-color: #080081;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.documentosSolicitud {
+	background-color: #080081;
+}
+.solicitud {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.sitSolicitud {
+	background-color: #080081;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.solicitud-lbl {
+	background-color: #080081;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.solicitud-final {
+    background-color: #080081;
+    color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+    border: 3px solid #fff!important;
+}
+.sitSolicitud_cab_ils{
+	background-color: #080081;
+	color: #fff;
+}
+.sitSolicitud_ils{
+	color: #fff;
+}
+.validacion_cab {
+	background-color: #64bb64;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.validacion {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.sitValidacion {
+	background-color: #b23cfd;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.validacion-lbl {
+	background-color: #b23cfd;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.validacion-final {
+	background-color: #b23cfd;
+    color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+    border: 3px solid #fff!important;
+}
+.sitAdhesion_cab_ils{
+	background-color: #b23cfd;
+	color: #fff;
+}
+.sitAdhesion_ils{
+	color: #fff;
+}
+.adhesion-lbl{
+	background-color: #b23cfd;
+    color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+}
+.adhesion-lbl-final{
+	background-color: #b23cfd;
+    color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+    border: 3px solid #fff!important;
+}
+.seguimiento-lbl{
+	background-color: #fffb0b;
+    color: #000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+}
+.seguimiento-lbl-final{
+	background-color: #fffb0b;
+    color: #000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0!important;
+    border: 3px solid #fff!important;
+}
+.ejecucion_cab {
+	background-color: #fffb0b;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.ejecucion {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.ejecucion-final {
+	background-color: #080081;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+	border: 3px solid #fff!important;
+}
+.sitEjecucion {
+	background-color: #fffb0b;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.ejecucion-lbl {
+	background-color: #fffb0b;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.sitEjecucion_cab_ils{
+	background-color: #fffb0b;
+	color: #000;
+}
+.sitEjecucion_ils{
+	color: #000;
+}
+.justificacion_cab {
+	background-color: #f37020;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.justificacion {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.justificacion-lbl {
+	background-color: #f37020;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.justificacion-final {
+	background-color: #f37020;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+	border: 2px solid #fff!important;
+}
+.desestimiento_cab {
+	background-color: #84c9e6;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.desestimiento {
+	/*background-color: #84c9e6;
+	color:#fff;*/
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.desestimiento-lbl {
+	background-color: #84c9e6;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.desestimiento-final {
+	background-color: #84c9e6;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+	border: 2px solid #fff!important;
+}
+.indeterminado {
+	background-color: #000000;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+	border: 2px solid #fff!important;
+}
+.indeterminado_ils {
+	background-color: #43584a;
+	color:#fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width:100%;
+	border-radius: 0!important;
+	border: 2px solid #fff!important;
+}
+
+input[tpye="file"] {
+	padding: 0.7rem;
+	margin: 1rem;
+	width: 100%;
+	font-size: 1em!important;
+	font-family: Raleway;
+	border: 2px solid rgba(209, 236, 241, 1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+input:focus {
+	background-color: #fda500 !important;
+	color: rgb(255, 255, 255) !important;
+	font-weight: bold !important;
+	border: #000 solid 1px !important;
+}
+#estat_signatura:hover {
+	opacity: .9;
+	color: #fda500;
+	font-weight: 800;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* ------------------------------------------------------------------------------------------------*/
+/* ----------------------------- Tablas de documentos ---------------------------------------------*/
+span.export {
+	background:url(../images/export.png) no-repeat;
+	background-position: 0px 3px;
+	padding-left: 20px;
+}
+.docsExpediente {
+    background-color: rgba(248, 249, 250, 1.0);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.00rem;
+    padding: .45rem;
+}
+.header-wrapper-docs {
+	display: inline-grid;
+	grid-template-columns: 20% 40% 20% 20%;
+	padding: .4rem;
+	width: 100%;
+	color: #fff;
+}
+.header-wrapper-docs-solicitud {
+	background-color: #cccccc;
+}
+.header-wrapper-docs-validacion {
+	background-color: #64bb64;
+	color: #000!important;
+}
+.header-wrapper-docs-ejecucion {
+	background-color: #6d9eeb;
+	color: #000!important;
+}
+.header-wrapper-docs-justificacion {
+	display: inline-grid;
+	grid-template-columns: 20% 60% 20%;
+	padding: .4rem;
+	width: 100%;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.header-wrapper-docs-desestimiento {
+	background-color: #8e7cc3;
+	color: #000!important;
+}
+@media screen and (max-width: 625px) {
+.header-wrapper-docs {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #f6b26b;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+
+.header-wrapper-docs-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	text-align: left;
+}
+
+.detail-wrapper-docs {
+	display: grid;
+  	grid-template-columns: 20% 40% 20% 20%;
+  	padding: .4rem;
+	width: 100%;
+}
+
+.detail-wrapper-docs-solicitud {
+	background-color: #f6b26b;
+}
+
+.detail-wrapper-docs-validacion {
+	background-color: #00ff00;
+}
+
+.detail-wrapper-docs-ejecucion {
+	background-color: #6d9eeb;
+}
+.header-wrapper-docs-justificacion {
+	background-color: #f37020;
+}
+.detail-wrapper-docs-justificacion {
+	display: grid;
+	grid-template-columns: 20% 40% 20% 20%;
+	padding: .4rem;
+  	width: 100%;
+	background-color: #1266f1;
+	font-size: 1.3rem;
+}
+
+.detail-wrapper-docs-justificacion-justificantes {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	padding: .4rem;
+  	width: 100%;
+	background-color: #f37020;
+	font-size: 1.3rem;
+}
+
+.detail-wrapper-docs-desestimiento {
+  	background-color: #84c9e6;
+}
+
+@media screen and (max-width: 625px) {
+.detail-wrapper-docs {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+  	background-color: #ffa500;
+	padding: 10px;
+ 	margin: 5px;
+	width: 100%;
+	text-align:left;
+}
+}
+
+.detail-wrapper-docs-col {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: .4rem;
+  font-size: 1.2rem;
+}
+
+.date-docs-col {
+	font-size: 1.2rem!important;
+}
+/* ----------------------------- Ventana modal ---------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* --------------------------- Accordion ---------------------------------------------*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 1.4s;
+  margin-bottom: 0.2rem;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid;
+}
+code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #fff;
+	background-color: #00b74a;
+	border-radius: 4px;
+  }
+
+/* -----------------------------------Styling los Tabs del detalle de la solicitud------------------------*/
+    /* Style the tab */
+    .tab_fase_exp {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab_fase_exp button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab_fase_exp button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab_fase_exp button.active {
+        background-color: #ccc;
+    }
+    .detall_tab {
+        background-color: #ccc!important;
+    }
+    .solicitud_tab {
+        background-color: #080081!important;
+		color: #fff!important;
+    }
+	.adhesion_tab {
+        background-color: #b23cfd!important;
+		color: #fff!important;
+    }
+  .validacion_tab {
+        background-color: #b23cfd!important; 
+        color: #fff;
+    }
+    .ejecucion_tab {
+        background-color: #fffb0b!important;
+        color: #000;
+    }
+    .justificacion_tab {
+        background-color: #f37020!important;
+        color: #fff;
+    }
+    .deses_ren_tab {
+        background-color: #782400!important;
+        color: #fff;
+    }
+
+    /* Style the tab content */
+    .tab_fase_exp_content {
+        display: none;
+        /*padding: 6px 12px;*/
+        border: 1px solid #ccc;
+        border-top: none;
+        margin-bottom: 6rem!important;
+    }
+
+		.panel-justificacion {
+			border: 1px solid black;
+			padding: 20px;
+			border-radius: 5px;
+			background-color: aliceblue;
+			margin-bottom: 1rem;
+		}
+
+		.hide-button {
+			display: none;
+		}
+
+		.show-button {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 5px;
+			border-radius: 5px;
+			border: 5px solid #000000;
+			color: #ffffff;
+			font-weight: 800;
+			background-color: #39c0ed;
+		}

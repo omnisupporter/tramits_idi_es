@@ -1,0 +1,21 @@
+#################################################################
+# Archivo generado automaticamente, no lo edite
+#################################################################
+<IfModule mod_rewrite.c>
+        RewriteEngine on
+	
+	# Capturamos protocolo
+	RewriteCond %{HTTPS} =on
+	RewriteRule ^(.*)$ - [env=proto:https]
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^(.*)$ - [env=proto:http]
+
+        # Evitamos reescribir rutas existentes
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-l
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ http://vls15546.dinaserver.com/$1?yourlshost=%{HTTP_HOST}&yourlsprotocol=%{ENV:proto}&yourlsuri=%{REQUEST_URI} [R=301,L,QSA]
+</IfModule>
+#################################################################
+# Fin de archivo generado automaticamente, no lo edite
+#################################################################
