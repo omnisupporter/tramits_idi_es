@@ -2,6 +2,7 @@
 Es el gestor de:
 - Ayudas y de subvenciones para el servicio de política industrial del IDI
 - Proceso de adhesión al programa ILS (Industria Local Sostenible) del IDI 
+- Ayudas IDI-ISBA (en construcción)
 
 # CodeIgniter 4 Framework
 
