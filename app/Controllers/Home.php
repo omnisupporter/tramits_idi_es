@@ -5,7 +5,7 @@ use App\Models\ExpedientesModel;
 
 class Home extends BaseController
 {
-public function index()
+	public function index()
 	{
 		$session = session();
 		if ($session->has('username')) {
@@ -21,7 +21,7 @@ public function index()
 		}
 	}
 
-public function ca ()
+	public function ca ()
 	{
 		$modelConfig = new ConfiguracionModel();
 		$data['configuracion'] = $modelConfig->where('convocatoria_activa', 1)->first();
@@ -36,7 +36,7 @@ public function ca ()
 		echo view('templates/footer/footer');
 	}
 	
-public function es ()
+	public function es ()
 	{
 		$language = \Config\Services::language();
 		$request = \Config\Services::request();
@@ -49,7 +49,8 @@ public function es ()
 		echo view('templates/footer/footer');
 	}
 	
-public function expedientes ($page = 'forms/form-solicitud-ayuda')
+
+	public function expedientes ($page = 'forms/form-solicitud-ayuda')
 	{
 		$data['titulo'] = lang('message_lang.titulo_exped');
 		echo view('templates/header/header', $data);
@@ -58,7 +59,8 @@ public function expedientes ($page = 'forms/form-solicitud-ayuda')
 	}
 	
 
-public function solicitud_ayuda($page = 'forms/form-solicitud-ayuda')
+
+	public function solicitud_ayuda($page = 'forms/form-solicitud-ayuda')
 	{
 		helper('form');
 		helper('filesystem');
@@ -80,7 +82,8 @@ public function solicitud_ayuda($page = 'forms/form-solicitud-ayuda')
 		}
 	}
 	
-public function justificacion_cheques($id, $nif, $tipoTramite)
+
+	public function justificacion_cheques($id, $nif, $tipoTramite)
 	{
 		helper('form');
 		helper('filesystem');
@@ -109,7 +112,8 @@ public function justificacion_cheques($id, $nif, $tipoTramite)
 		echo view('templates/footer/footer_form');
 	}
 
-public function subsanacion_idigital($page = 'forms/form-subsanacion-idigital')
+
+	public function subsanacion_idigital($page = 'forms/form-subsanacion-idigital')
 	{
 		helper('form');
 		helper('filesystem');
@@ -119,7 +123,8 @@ public function subsanacion_idigital($page = 'forms/form-subsanacion-idigital')
 		echo view('templates/footer/footer');
 	}	
 	
-public function set_lang () 
+
+	public function set_lang () 
 	{
 		helper('cookie');
 		// $uri = new \CodeIgniter\HTTP\URI();	
@@ -155,7 +160,8 @@ public function set_lang ()
 		echo view('templates/footer/footer_form'); */
 	}
 	
-public function set_lang_req ()
+
+	public function set_lang_req ()
 	{
 		$uri = new \CodeIgniter\HTTP\URI();	
 		$language = \Config\Services::language();
@@ -170,7 +176,8 @@ public function set_lang_req ()
 		echo view('templates/footer/footer');
 	}
 
-public function set_lang_justific ($idioma, $id, $nif, $tipoTramite)
+
+	public function set_lang_justific ($idioma, $id, $nif, $tipoTramite)
 	{
 		helper('form');
 		helper('filesystem');
@@ -195,7 +202,8 @@ public function set_lang_justific ($idioma, $id, $nif, $tipoTramite)
 		echo view('templates/footer/footer_form');
 	}	
 	
-public function dec_resp_consul($page = 'forms/form-dec-resp-consultor-idigital')
+
+	public function dec_resp_consul($page = 'forms/form-dec-resp-consultor-idigital')
 	{
 		helper('form');
 		helper('filesystem');
@@ -205,7 +213,8 @@ public function dec_resp_consul($page = 'forms/form-dec-resp-consultor-idigital'
 		echo view('templates/footer/footer');
 	}
 
-public function set_lang_pindust_form_consul ()
+
+	public function set_lang_pindust_form_consul ()
 	{
 		$uri = new \CodeIgniter\HTTP\URI();	
 		$language = \Config\Services::language();
@@ -221,7 +230,7 @@ public function set_lang_pindust_form_consul ()
 	}
 	//--------------------------------------------------------------------
 
-public function solicitud_adhesion_ils($page = 'forms/form-adhesion-ils')
+	public function solicitud_adhesion_ils($page = 'forms/form-adhesion-ils')
 	{
 		helper('form');
 		helper('filesystem');
@@ -240,7 +249,7 @@ public function solicitud_adhesion_ils($page = 'forms/form-adhesion-ils')
 		echo view('pages/forms/form-adhesion-ils');
 	}
 
-public function solicitud_adhesion_ils_es($page = 'forms/form-adhesion-ils')
+	public function solicitud_adhesion_ils_es($page = 'forms/form-adhesion-ils')
 	{
 		helper('form');
 		helper('filesystem');
@@ -259,7 +268,7 @@ public function solicitud_adhesion_ils_es($page = 'forms/form-adhesion-ils')
 		echo view('pages/forms/form-adhesion-ils');
 	}
 
-public function datos_empresa_ils( $id )
+	public function datos_empresa_ils( $id )
 	{
 		helper('form');
 		helper('filesystem');
@@ -334,7 +343,7 @@ public function datos_empresa_ils( $id )
 		echo view('templates/footer/footer_form');
 	}
 
-public function datos_empresa_ils_es( $id )
+	public function datos_empresa_ils_es( $id )
 	{
 		helper('form');
 		helper('filesystem');
@@ -358,42 +367,43 @@ public function datos_empresa_ils_es( $id )
 		echo view('templates/footer/footer_form');
 	}	
 
-public function empresas_adheridas_ils () {
-	helper('cookie');
-	$language = \Config\Services::language();
-	$db = \Config\Database::connect();
-	$language->setLocale('es');
+	public function empresas_adheridas_ils () 
+	{
+		helper('cookie');
+		$language = \Config\Services::language();
+		$db = \Config\Database::connect();
+		$language->setLocale('es');
 
-	$sql = "SELECT pindust_expediente.id, empresa, nif, domicilio, canales_comercializacion_empresa, sitio_web_empresa, video_empresa, fecha_creacion_empresa, 
-			name, pindust_documentos.selloDeTiempo, type
+		$sql = "SELECT pindust_expediente.id, empresa, nif, domicilio, canales_comercializacion_empresa, sitio_web_empresa, video_empresa, fecha_creacion_empresa, 
+				name, pindust_documentos.selloDeTiempo, type
 
-			FROM pindust_expediente
-			INNER JOIN pindust_documentos
-			ON pindust_expediente.id = pindust_documentos.id_sol WHERE publicar_en_web = 1 AND corresponde_documento = 'file_logotipoEmpresaIls';";
+				FROM pindust_expediente
+				INNER JOIN pindust_documentos
+				ON pindust_expediente.id = pindust_documentos.id_sol WHERE publicar_en_web = 1 AND corresponde_documento = 'file_logotipoEmpresaIls';";
 
-	$query = $db->query($sql);
-	$data['empresas'] = $query->getResult();
+		$query = $db->query($sql);
+		$data['empresas'] = $query->getResult();
 
-	echo view('pages/forms/lista-empresas-ils', $data);
+		echo view('pages/forms/lista-empresas-ils', $data);
+	}		
 
-}	
+	public function empresas_adheridas_ils_detail ( $id ) 
+	{
+		helper('cookie');
+		$language = \Config\Services::language();
+		$db = \Config\Database::connect();
+		$language->setLocale('es');
 
-public function empresas_adheridas_ils_detail ( $id ) {
-	helper('cookie');
-	$language = \Config\Services::language();
-	$db = \Config\Database::connect();
-	$language->setLocale('es');
-
-	$sql = "SELECT empresa, nif, domicilio, canales_comercializacion_empresa, sitio_web_empresa, video_empresa, localidad, telefono, fecha_creacion_empresa, 
+		$sql = "SELECT empresa, nif, domicilio, canales_comercializacion_empresa, sitio_web_empresa, video_empresa, localidad, telefono, fecha_creacion_empresa, 
 			name, pindust_documentos.selloDeTiempo, type
 
 			FROM pindust_expediente
 			INNER JOIN pindust_documentos
 			ON pindust_expediente.id = pindust_documentos.id_sol WHERE pindust_expediente.id = ".$id." AND corresponde_documento = 'file_logotipoEmpresaIls';";
 
-	$query = $db->query($sql);
-	$data['empresas'] = $query->getResult();
+		$query = $db->query($sql);
+		$data['empresas'] = $query->getResult();
 
-	echo view('pages/forms/detail-empresa-ils', $data);
-}
+		echo view('pages/forms/detail-empresa-ils', $data);
+	}
 }
