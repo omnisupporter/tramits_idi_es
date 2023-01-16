@@ -77,12 +77,6 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 es el gestor de base de datos utilizado para esta aplicación
 
-# Acceso a la aplicación
-
-La aplicación se encuentra en la siguiente URL:
-
-[Tramits IDI](https://tramits.idi.es/public)
-
 el usuario y contraseña se obtienen del correo electrónico corporativo. Antes deben haber sido previamente dados de alta como usuarios habilitados. No todos los correos electrónicos corporativos tienen acceso
 
 # La firma electrónica
