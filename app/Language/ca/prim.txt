@@ -1,0 +1,12 @@
+new Promise(function(resolve, reject) {
+  setTimeout(() => resolve('promises'),3000);
+}). then(function(result) {
+  console.log(result);
+  return `${result} are`;
+}).then(function(result) {
+  console.log(result);
+  return `${result} awesome`;
+}).then(function(result){
+  console.log(result);
+  return `${result}.`;
+})

@@ -1,0 +1,296 @@
+function averiguaTipoDocumento (valor) {
+	let formaJuridica = '';
+	if(valor.length != 9)
+		{
+		document.getElementById("info_lbl").innerHTML = "La longitud del número del documento identificador tiene que ser de 9 dígitos.";
+		document.getElementById("nif").value = "";
+		return;
+		}
+	if(document.getElementsByName("tipo_solicitante")[0].checked) formaJuridica = "autonomo"
+	if(document.getElementsByName("tipo_solicitante")[1].checked) formaJuridica = "pequenya"
+	if(document.getElementsByName("tipo_solicitante")[2].checked) formaJuridica = "mediana"
+	//if(document.getElementsByName("tipo_solicitante")[3].checked) formaJuridica = "cluster_ct"
+	if (formaJuridica==="autonomo") {
+		analizaDNINIE(valor)
+	} else {
+		analizaCIF(valor)
+	}
+}
+
+function analizaCIF (cif)
+	{
+	/* Esta función comprueba que la estructura de un CIF sea correcta */
+	/* La estructura correcta de un CIF es: */
+	/* OPPNNNNNC, donde: */
+	/* O: organización 
+	/* PP: código de dos díditos de la provincia 
+	/* NNNNN: numeración secuencial */
+	/* C: dígito de control */
+	// Letras de control: letraControl = ["K", "P", "Q", "S"];
+	// Números de control: numeroControl = ["A", "B", "E", "H"];
+	var cif = cif.toUpperCase();
+	console.log("Valor tecleado: "+cif)
+	var motivo = "";
+	// De entrada, supongo que todos los códigos son erróneos.
+	var organizacion_OK = false;
+	var provincia_OK = false;
+	var numeracion_OK = false;
+	var dControl_OK = false;
+
+	// Mostraré el resultado en el elemento HTML con id = info_lbl
+	document.getElementById("info_lbl").innerHTML = "";
+	// Creo los arrays con todos los posibles valores de organización, provincia y letras y números de control
+	var organizacionCodigo = ["A","B","C","D","E","F","G","J","H","K","L","M","N","P","Q","R","S","U","V","W"];
+	// Los códigos de provincia, los separo en varios arrays por comodidad de lectura
+	var provinciaCodigo_1 = ["00", "01", "02", "03", "53", "54", "04", "05", "06", "07", "57", "08"];
+	var provinciaCodigo_2 = ["58", "59", "60", "61", "62", "63", "64", "65", "66", "68", "09", "10", "11", "72"];
+	var provinciaCodigo_3 = ["12", "13", "14", "56", "15", "70", "16", "17", "55", "67", "18"];
+	var provinciaCodigo_4 = ["19", "20", "71", "21", "22", "23", "24", "25", "26", "27"];
+	var provinciaCodigo_5 = ["28", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "29", "92"];
+	var provinciaCodigo_6 = ["93", "30", "73", "31", "71", "32", "33", "74", "34", "35", "75"];
+	var provinciaCodigo_7 = ["36", "37", "94", "38", "76", "75", "39", "40", "41", "90", "91", "42"];
+	var provinciaCodigo_8 = ["43", "77", "44", "45", "46", "96", "97", "98", "47", "48"];
+	var provinciaCodigo_9 = ["49", "50", "99", "51", "52"];
+	// Los concatenaré en un único array al que llamo provinciaCodigo, 
+	var provinciaCodigo = provinciaCodigo_1.concat(provinciaCodigo_2);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_3);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_4);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_5);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_6);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_7);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_8);
+	provinciaCodigo = provinciaCodigo.concat(provinciaCodigo_9);
+	
+	// Separo la parte que corresponde a la Organización y lo convierto todo a mayúsculas	
+	var organizacion = cif.substring(0, 1);
+	// Separo la parte que corresponde a la provincia
+	var provincia = cif.substring(1, 3);
+	// Separo la parte correspondiente a la numeración secuencial
+	var numeracion = cif.substring(3, 8);
+	// Separo la parte correspondiente al dígito de control
+	var dControl = cif.substring(8, 9);
+	console.log(organizacion, provincia, numeracion, dControl)
+	// Verifico que el código de la organización sea un valor correcto, si es así, asigno el valor verdadero
+	if (organizacionCodigo.indexOf( organizacion ) != -1) {
+		organizacion_OK = true;
+	}
+	// Compruebo que el código de provincia sea un valor correcto, si es así, asigno el valor verdadero
+	if (provinciaCodigo.indexOf( provincia ) != -1) {
+		provincia_OK = true;
+	}
+	// Compruebo que la secuencia de numeración sea un número y, entonces, que no existan letras ni caracteres no numéricos
+	if (!isNaN( numeracion )) {
+		numeracion_OK = true;
+	}
+	// Cuando la organización es K,P,Q,S  el dígito de control debe ser una letra
+	if ((isNaN(dControl)) && (organizacion == "K" || organizacion == "P" || organizacion == "Q" || organizacion == "S")) {
+		dControl_OK = true;
+	}
+	// Cuando organización es A,B,E,H, el dígito de control debe ser número,
+	else if ((!isNaN(dControl)) && (organizacion == "A" || organizacion == "B" || organizacion == "E" || organizacion == "H")) {
+		dControl_OK = true;
+	}
+	dControl_OK = true;
+	// Muestro el valor entrado en el elemento HTML con id = info_lbl
+	// document.getElementById("info_lbl").innerHTML = document.getElementById("info_lbl").innerHTML + " Control: " + dControl + " " + dControl_OK + "<br>";
+	// Si, todos los códigos anteriores son correctos, el CIF es correcto
+	if (organizacion_OK && provincia_OK && numeracion_OK && dControl_OK) {
+		esCIF_OK = true;
+	}
+	// En otro caso, indico en que códigos está el error
+	if (!organizacion_OK ||  !provincia_OK || !numeracion_OK  || !dControl_OK ) {
+		motivo = "Alguna part del CIF no està correcte:\n";
+	}
+	if (!organizacion_OK) {
+		motivo = motivo + "<li>Organización equivocada</li>";
+	}
+	if (!provincia_OK) {
+		motivo = motivo + "<li>Provincia equivocada</li>";
+	}
+	if (!numeracion_OK) {
+		motivo = motivo + "<li>Número secuencial equivocado</li>";
+	}
+	if (!dControl_OK) {
+		motivo = motivo + "<li>Dígito de control equivocado</li>";
+	}
+	// Muestro el valor entrado en el elemento HTML con id = info_lbl
+	document.getElementById("info_lbl").innerHTML = document.getElementById("info_lbl").innerHTML + motivo;
+	if (motivo == "") 
+	{
+		document.getElementById("nif").value = cif;
+		document.getElementById("nif").setAttribute ('class','valid');
+	}
+	else 
+	{
+		document.getElementById("nif").focus();
+		document.getElementById("nif").value = "";
+		document.getElementById("nif").setAttribute ('class','invalid');
+		document.getElementById("info_lbl").value = motivo;
+	}
+	}
+
+function analizaDNINIE (dninie)
+	{
+	// Primero averiguar si se trata de DNI o de NIE
+	// ---------NIE--------------------------------------------------
+	// Estructura del NIE: ADDDDDDDB
+	// A: {X,Y,Z}
+	// B: Sustituir X->0, Y->1, Z->2, añadir los siete dígitos restantes y hacer módulo 23 . El resto es el índice del array posiblesLetrasDNINIE
+	// ---------DNI---------------------------------------------------
+	// Estructura del DNI: 12345678A
+	// La operación consiste en una división del número del DNI entre 23. 
+	// El número del DNI debe tomarse como un entero, por ello los ceros que se encuentren a la izquierda no serán válidos. 
+	// Al dividir entre 23 tendremos 23 posibles resultados.  'T,R,W,A,G,M,Y,F,P,D,X,B,N,J,Z,S,Q,V,H,L,C,K,E'
+	// $posiblesLetrasDNI = array('T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E');
+	// El valor que debemos tomar para el cálculo de la letra del DNI es el resto qué se obtiene de la división anteriormente indicada. 
+	// Tendremos pues ventitres posibles resultados desde el 0 hasta el 22. 
+	// Cada letra tiene un valor entre 0 y 22 que coincidirá pues con el resto que hemos obtenido de la operación aritmética. 
+	// coincide el último dígito con el resultado de la operación de comprobación.
+
+	let currentDNINIE = dninie.toUpperCase();
+	// primer dígito numérico
+	let primerDigitoDNINIE = currentDNINIE.slice(0, 1);
+
+	// intermedio dígito numérico
+	let digitosIntermedio = currentDNINIE.slice(1, 8);	
+
+	// último dígito alfabético
+	let caracterVerificacionAlfabetico = currentDNINIE.slice(8, 9);
+
+	//Resultante
+	let resultante
+	const posiblesLetrasDNINIE = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'];		
+	if (isNaN(primerDigitoDNINIE) ) // si el primer dígito no és un número, se trata de un NIE: ADDDDDDDB, A={X,Y,Z}	
+		{
+		if (primerDigitoDNINIE!='X' && primerDigitoDNINIE!='Y' && primerDigitoDNINIE!='Z') // y tiene que ser X,Y,Z
+			{
+			document.getElementById("info_lbl").innerHTML = "El primer dígito tiene que ser una X, Y o Z.";
+			document.getElementById("nif").value = ""
+			// Para hacer que funcione el focus() en Firefox
+			// setTimeout("document.getElementById('nif').focus();",0);
+			return;	
+			}
+		else 
+		{
+			switch (primerDigitoDNINIE) 
+			{
+				case 'X':
+					resultante = 0+digitosIntermedio	 
+				break
+				case 'Y':
+					resultante = 1+digitosIntermedio	 
+				break
+				case 'Z':
+					resultante = 2+digitosIntermedio	 
+				break
+			}
+		}
+		} else {
+			resultante = primerDigitoDNINIE+digitosIntermedio
+		}
+		
+		console.log ("Resultante: " + resultante)
+		var i = resultante % 23;
+		console.log("Índice del array: " + i)
+		var letraDNINIE = posiblesLetrasDNINIE[i];
+		console.log ("Carácter de verificación: " + caracterVerificacionAlfabetico + " Letra:" + letraDNINIE);
+		document.getElementById("nif").value = primerDigitoDNINIE+digitosIntermedio+letraDNINIE;
+	}
+
+function tenemosDatosSolicitante(documentoIdentificativo) {
+	//let textoMotivo = document.getElementById("motivogeneraInformeDesfConReq").value;
+	let nif = documentoIdentificativo;
+	var modal = document.getElementById("myModal");
+	let response = false;
+	$.post(
+		"/public/assets/utils/buscarSolicitudPorNIF.php",
+		{ nif: nif },
+		function (data) {
+			document.getElementById("aviso").innerHTML = "Buscando datos ...";
+		  })
+			.done(function( data ) {
+				let infoDisponible = document.getElementById('info-disponible');
+				let dataToArray = data.split('#');
+				console.log (data)
+				if (dataToArray != "0 results"){
+					modal.style.display = "block";
+					infoDisponible.innerHTML = "<li>NIF: "+dataToArray[0]+"</li>";
+					infoDisponible.innerHTML += "<li>Raó social: "+dataToArray[1]+"</li>";
+					infoDisponible.innerHTML += "<li>Domcili: "+dataToArray[2]+"</li>";
+					infoDisponible.innerHTML += "<li>Localitat: "+dataToArray[3]+"-"+dataToArray[4]+"</li>";
+					infoDisponible.innerHTML += "<li>Codi Postal: "+dataToArray[5]+"</li>";
+					infoDisponible.innerHTML += "<li>Telèfon de contacte: "+dataToArray[6]+"</li>";
+					infoDisponible.innerHTML += "<li>Epigraf IAE: "+dataToArray[7]+"</li>";
+					infoDisponible.innerHTML += "<li>Nom del representant: "+dataToArray[8]+"</li>";
+					infoDisponible.innerHTML += "<li>DNI del representant: "+dataToArray[9]+"</li>";
+					infoDisponible.innerHTML += "<li>Telèfon de notificacions: "+dataToArray[10]+"</li>";
+					infoDisponible.innerHTML += "<li>Adreça electrònica de notificacions: "+dataToArray[11]+"</li>";
+
+					infoDisponible.innerHTML += "<li>Tenim Escriptura empresa: "+dataToArray[12]+"</li>";
+					infoDisponible.innerHTML += "<li>Tenim la memòria Tècnica: "+dataToArray[13]+"</li>";
+					infoDisponible.innerHTML += "<li>Tenim el certificat IAE: "+dataToArray[14]+"</li>";
+					infoDisponible.innerHTML += "<li>Tenim una còpia del NIF: "+dataToArray[15]+"</li>";
+
+
+					localStorage.setItem('nif', dataToArray[0]);
+					localStorage.setItem('empresa', dataToArray[1]);
+					localStorage.setItem('domicilio', dataToArray[2]);
+					localStorage.setItem('localidad', dataToArray[3]+"#"+dataToArray[4]);
+					localStorage.setItem('cpostal', dataToArray[5]);
+					localStorage.setItem('telefono', dataToArray[6]);
+					localStorage.setItem('epigrafe_IAE', dataToArray[7]);
+
+					localStorage.setItem('nombre_rep', dataToArray[8]);
+					localStorage.setItem('nif_rep', dataToArray[9]);
+					localStorage.setItem('telefono_rep', dataToArray[10]);
+					localStorage.setItem('email_rep', dataToArray[11]);
+
+					localStorage.setItem('file_escritura_empresa', dataToArray[12]);
+					localStorage.setItem('file_memoriaTecnica', dataToArray[13]);
+					localStorage.setItem('file_certificadoIAE', dataToArray[14]);
+					localStorage.setItem('file_copiaNIF', dataToArray[15]);
+
+
+				} else {
+					document.getElementById("aviso").innerHTML = "No hay datos.";
+				}
+
+			})
+			.fail(function( e ) {
+			  alert( "Error: " + e.status );
+			})
+			.always(function() {
+			  //alert( "finished" );
+			});
+}
+
+function actualizoFormConDatosSolicitante () {
+	
+	document.getElementById("denom_interesado").value = localStorage.getItem('nif');
+	document.getElementById("denom_interesado").value = localStorage.getItem('empresa')
+	document.getElementById("domicilio").value =  localStorage.getItem('domicilio')
+	document.getElementById("cpostal").value = localStorage.getItem('cpostal')
+	document.getElementById("telefono_cont").value = localStorage.getItem('telefono')
+	document.getElementById("codigoIAE").value = localStorage.getItem('epigrafe_IAE')
+	document.getElementById("localidad").value =  localStorage.getItem('localidad')
+
+	document.getElementById("nom_representante").value = localStorage.getItem('nombre_rep')
+	document.getElementById("nif_representante").value = localStorage.getItem('nif_rep');
+	document.getElementById("tel_representante").value = localStorage.getItem('telefono_rep');
+	document.getElementById("mail_representante").value = localStorage.getItem('email_rep');
+
+	if (localStorage.getItem('file_escritura_empresa') === 'SI') {
+		document.getElementById('mostrarEscritura').style.display = 'none'
+	}
+	if (localStorage.getItem('file_memoriaTecnica') === 'SI') {
+		document.getElementById('mostrarMemoriaTecnica').style.display = 'none'
+	}	
+	if (localStorage.getItem('file_certificadoIAE') === 'SI') {
+		document.getElementById('mostrarIAE').style.display = 'none'
+	}
+	if (localStorage.getItem('file_copiaNIF') === 'SI') {
+		document.getElementById('mostrarNIF').style.display = 'none'
+	}
+
+	cierraModal()
+}

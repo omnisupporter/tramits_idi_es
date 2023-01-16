@@ -1,0 +1,1190 @@
+		* {
+			transition: background-color 300ms ease, color 300ms ease;
+		}
+		*:focus {
+			/* background-color: rgba(221, 72, 20, .2); */
+			background-color: #a3d4db;
+			outline: none;
+		}
+		html, body {
+			background-color: #f1f1f1;
+			color: rgba(33, 37, 41, 1);
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+			font-size: 10px;
+			margin: 0;
+			padding: 0;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-rendering: optimizeLegibility;
+		}
+a {
+  color: #000000 !Important;
+  font-weight: bold !Important;
+}
+
+a:hover {
+  /*color: #ffffff !Important;*/
+  font-weight: normal !Important;
+}
+.hidden-itramits {
+    display: none !important;
+}
+
+#enviar_docs:hover {
+	cursor: pointer;
+}
+
+.jumbotronItramits {
+	background-color: rgb(204, 201, 201);
+	color:rgba(0, 0, 0, 0.8);
+	padding: 1rem;
+	border-radius: 5px;
+	border:rgba(0, 0, 0, 0.8) solid 1px;
+	font-size: 2rem;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+  input:required:invalid, input:focus:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+    -moz-box-shadow: none;
+  }
+  input:required:valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+		header {
+			/*background-color: rgba(247, 248, 249, 1);*/
+			padding: .4rem 0 0;
+		}
+		.menu {
+			padding: .4rem 2rem;
+		}
+		.icono-salida {
+			font-size: 24px;
+			color: rgb(221 72 20 / 91%);
+		}
+		header ul {
+			border-bottom: 1px solid rgba(26, 25, 25, 1);
+			list-style-type: none;
+			margin-bottom: 2em;
+			overflow: hidden;
+			padding-bottom: 2em;
+			text-align: right;
+		}
+		header li {
+			display: inline-block;
+		}
+		header li a {
+			border-radius: 5px;
+			color: rgba(0, 0, 0, .5);
+			display: block;
+			height: 44px;
+			text-decoration: none;
+		}
+		header li.menu-item a {
+			border-radius: 5px;
+			margin: 5px 0;
+			height: 38px;
+			line-height: 36px;
+			padding: .4rem .65rem;
+			text-align: center;
+		}
+		header li.menu-item a:hover,
+		header li.menu-item a:focus {
+			/*background-color: rgba(221, 72, 20, .2);*/
+			background-color: #38a7a2;
+			text-decoration: underline wavy #38a7a2;
+			color: #000;
+		}
+		header .logo {
+			float: left;
+			height: 44px;
+			padding: .4rem .5rem;
+		}
+		header .menu-toggle {
+			display: none;
+			float: right;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		header .menu-toggle button {
+			background-color: rgb(221 72 20 / 91%);
+			border: none;
+			border-radius: 3px;
+			color: rgba(255, 255, 255, 1);
+			cursor: pointer;
+			font: inherit;
+			font-size: 1.3rem;
+			height: 36px;
+			padding: 0;
+			margin: 11px 0;
+			overflow: visible;
+			width: 40px;
+		}
+		header .menu-toggle button:hover,
+		header .menu-toggle button:focus {
+			background-color: rgba(221, 72, 20, .8);
+			color: rgba(255, 255, 255, .8);
+		}
+		header .heroe {
+			margin: 0 auto;
+			max-width: 1100px;
+			padding: 1rem 1.75rem 1.75rem 1.75rem;
+		}
+		header .heroe h1 {
+			font-size: 2.5rem;
+			font-weight: 500;
+		}
+		header .heroe h2 {
+			font-size: 1.5rem;
+			font-weight: 300;
+		}
+		header .heroe h5 {
+			font-size: 1.5rem;
+			font-weight: 100;
+		}		
+		section {
+			margin: 0 auto;
+			max-width: 1100px;
+			padding: 2.5rem 1.75rem 3.5rem 1.75rem;
+		}
+		section h1 {
+			margin-bottom: 2.5rem;
+		}
+		section h2 {
+			font-size: 120%;
+			line-height: 2.5rem;
+			padding-top: 1.5rem;
+		}
+		section pre {
+			background-color: rgba(247, 248, 249, 1);
+			border: 1px solid rgba(242, 242, 242, 1);
+			display: block;
+			/*font-size: .9rem;*/
+			margin: 2rem 0;
+			padding: 1rem 1.5rem;
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+		section code {
+			display: block;
+		}
+		section a {
+			color: rgba(221, 72, 20, 1);
+		}
+		section svg {
+			margin-bottom: -5px;
+			margin-right: 5px;
+			width: 25px;
+		}
+		.further {
+			background-color: rgba(247, 248, 249, 1);
+			border-bottom: 1px solid rgba(242, 242, 242, 1);
+			border-top: 1px solid rgba(242, 242, 242, 1);
+		}
+		.further h2:first-of-type {
+			padding-top: 0;
+		}
+		footer {
+			/*background-color: rgba(221, 72, 20, .8);*/
+			background-color: #a3d4db;
+			text-align: center;
+		}
+		footer .environment {
+			color: rgba(255, 255, 255, 1);
+			
+			padding: 2rem 1.75rem;
+		}
+		footer .copyrights {
+			background-color: rgba(62, 62, 62, 1);
+			color: rgba(200, 200, 200, 1);
+			padding: .25rem 1.75rem;
+		}
+		@media (max-width: 559px) {
+			header ul {
+				padding: 0;
+			}
+			header .menu-toggle {
+				padding: 0 1rem;
+			}
+			header .menu-item {
+				background-color: rgba(244, 245, 246, 1);
+				border-top: 1px solid rgba(242, 242, 242, 1);
+				margin: 0 15px;
+				width: calc(100% - 30px);
+			}
+			header .menu-toggle {
+				display: block;
+			}
+			header .hidden {
+				display: none;
+			}
+			header li.menu-item a {
+				background-color: rgba(221, 72, 20, .1);
+			}
+			header li.menu-item a:hover,
+			header li.menu-item a:focus {
+				background-color: rgba(221, 72, 20, .7);
+				color: rgba(255, 255, 255, .8);
+			}
+		}
+.ocultar {
+	display: none;
+	background-color: #000;
+}
+
+#formbox {
+  width: 100%;             /* salvaguarda para navegadores que no reconocen calc() */
+  width: calc(100%);
+  border: 1px solid #1AB394;
+  background-color: #f8f9fa;
+  padding: 1em 1.8em 1em 1em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+/* ------------------------- RADIO BUTTONS --------------------------------------*/
+/* The container-radio */
+.container-radio {
+  /* display: block; */
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+  background-color: #a3d4db;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+  background-color: orange;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/* -------------------------------------------------------------------------------------------*/		
+/* ------------------------- CHECKBOXES ------------------------------------------------------*/	
+      .main {
+        display: block;
+        position: relative;
+        padding-left: 45px;
+       /* margin-bottom: 15px; */
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      h1 {
+        color: orange !important;
+      }
+      /* Hiding the initial checkbox */
+      input[type=checkbox] {
+        visibility: hidden;
+      }
+      /* Creating a custom checkbox based on demand */
+      .w3docs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+      }
+      /* Specify the background color to be shown when hovering over checkbox */
+      .main:hover input ~ .w3docs {
+        /*background-color: gray;*/
+		background-color: #a3d4db;
+      }
+      /* Specify the background color to be shown when checkbox is active */
+      .main input:active ~ .w3docs {
+        background-color: white;
+      }
+      /* Specify the background color to be shown when checkbox is checked */
+      .main input:checked ~ .w3docs {
+        background-color: orange;
+      }
+      /* Checkmark to be shown in checkbox */
+      /* It is not be shown when not checked */
+      .w3docs:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      /* Display checkmark when checked */
+      .main input:checked ~ .w3docs:after {
+        display: block;
+      }
+      /* Styling the checkmark using webkit */
+      /* Rotated the rectangle by 45 degree and 
+      showing only two border to make it look
+      like a tickmark */
+      .main .w3docs:after {
+        left: 8px;
+        bottom: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+/* ---------------------------------------------------------------------------------------------------- */	
+/* ------------------------------------ Formulario ---------------------------------------------------- */	
+.enviararchivo_ver	{
+  display: block;
+  width: 100%;
+  padding: 25px;
+  /*background-color: coral;
+  color: white;*/
+  font-size: 1.2em;
+  box-sizing: border-box;
+}
+
+.btn-itramits {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem !important;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success-itramits {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #1b5a29;
+}
+
+.btn-primary-itramits {
+    color: #000;
+	font-weight: bold !important;
+    background-color: #1AB394;
+    border-color: #1b5a29;
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: wrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem !important;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	width: 15rem !important;
+}
+
+.btn-primary-itramits:hover{
+	color: #fff;
+	font-weight: bold !important;
+	text-decoration: none !important;
+}
+
+.btn-ver-itramits {
+    color: #270 !important;
+    background-color: #DFF2BF !important;
+    border-color: #1b5a29 !important;
+}
+
+.fa-file-pdf-o-itramits:before {
+    content: "\f1c1";
+	padding: 2px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ------------------------------------ Expediente TABs ----------------------------------------------- */	
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  font-size: 1.1rem;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  /*color: white;*/
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.td_exped_fixed {
+	font-size:.8em; 
+	word-break: break-all;
+	width: 160px;
+}
+.td_exped {
+	font-size:.8em; 
+	word-break: break-all;
+}
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+/* ----------------------------------------------------------------------------------------------------- */
+/* ------------------------------------ labels --------------------------------------------------------- */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+.isa_info {
+    color: #00529B;
+    /*background-color: #BDE5F8;*/
+}
+.isa_success {
+    color: #4F8A10;
+    /*background-color: #DFF2BF;*/
+}
+.isa_warning {
+    color: #9F6000;
+   /*background-color: #FEEFB3;*/
+}
+.isa_error {
+    color: #D8000C;
+    /*background-color: #FFD2D2;*/
+}
+.isa_caducado {
+    color: #000000;
+    background-color: #ffffff;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i, .isa_caducado i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg,
+.neutral-msg {
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1rem!important;
+  /*width: 18rem;*/
+}
+.info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+  border: #270 solid 1px;
+}
+.success-msg-justific {
+	color: #270;
+	background-color: #DFF2BF;
+	border: #270 solid 1px;
+	width: 100% !important;
+	margin-bottom: .2rem;
+  }
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  border: #9F6000 solid 1px;
+}
+.warning-msg-justific {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	border: #9F6000 solid 1px;
+	width: 100% !important;
+	margin-bottom: .2rem;
+  }
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: #D8000C solid 1px;
+}
+.neutral-msg {
+	color: #000000;
+	background-color: transparent;
+	border: #000000 solid 1px;
+  }
+
+/*----------------------------------------- tooltip -------------------------------------------------*/
+.tooltip_idi {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  opacity: 1.0 !Important;
+  cursor: help;
+}
+
+.tooltip_idi .tooltiptext_idi {
+  visibility: hidden;
+  width: 995px;
+	font-size: .7em;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 1.0 !Important;
+  transition: opacity 0.8s;
+}
+
+.tooltip_idi .tooltiptext_idi::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip_idi:hover .tooltiptext_idi {
+  visibility: visible;
+  opacity: 1.0;
+  cursor: help;
+}
+
+/*------------------------------- tablas ------------------------------------------------*/
+.td_email {
+    word-break: break-all;
+}
+.form-control-itramits {
+    display: block;
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ffc107;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control-itramits-disabled {
+    display: block;
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+	border: 1px solid #cabece;
+	font-style: oblique;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.filter-area {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto 15%;
+	padding-bottom: 10px;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+  .filter-area {
+	grid-template-columns: auto;
+  }
+}
+
+.filter-area-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 0px solid rgba(0, 0, 0, 0.8);
+  	padding: 2px;
+  	text-align: left;
+}
+@media screen and (max-width: 625px) {
+.filter-area-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 0px solid rgba(0, 0, 0, 0.8);
+  	padding: 2px;
+	text-align: center;
+}
+}
+
+.lista-exped-wrapper {
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.lista-exped-wrapper {
+	display: inline-grid;
+	grid-template-columns: 100%;
+
+  	padding: 5px;
+	width: 100%;
+}
+}
+
+.header-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 10% 20% 10% 10% 10% 10%;
+  	/*background-color: #fda500;*/
+  	padding-bottom: 10px;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+.header-wrapper {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #fda500;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+
+.header-wrapper-col {
+  	background-color: #abadae; /*rgba(255, 255, 255, 0.8);*/
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	text-align: left;
+}
+
+.detail-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 10% 20% 10% 10% 10% 10%;
+  	background-color: #f1efef;
+  	padding: 2px;
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.detail-wrapper {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+	width: 100%;
+	text-align:left;
+
+}
+#fechaComletado::before {
+	content: "Data complet: ";
+		font-weight: bold;
+}
+#tipoTramite::before {
+	content: "Programa: ";
+		font-weight: bold;
+}
+#convocatoria::before {
+	content: "Convocatòria: ";
+		font-weight: bold;
+}
+#solicitante::before {
+	content: "Sol·licitant: ";
+		font-weight: bold;
+}
+#emailRepresentante::before {
+	content: "E·mail notificacions: ";
+		font-weight: bold;
+}
+#telRepresentante::before {
+	content: "Telèfon notificacions: ";
+		font-weight: bold;
+}
+#nombreConsultor::before {
+	content: "Consultor: ";
+	font-weight: bold;
+}
+}
+
+.detail-wrapper-col {
+  background-color: #1AB394; /*rgba(255, 255, 255, 0.8);*/
+  color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 1em;
+  text-align: left;
+}
+.sort_ASC:after {
+	content: "▲";
+}
+.sort_DESC:after {
+	content: "▼";
+}
+
+.header-custodia-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 10% 10%;
+  	/*background-color: #fda500;*/
+  	padding-bottom: 10px;
+	width: 100%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+@media screen and (max-width: 625px) {
+.header-custodia-wrapper {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #fda500;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+
+.detail-custodia-wrapper {
+	display: inline-grid;
+  	grid-template-columns: 10% 10% 10% 20% 10% 10% 10%;
+  	background-color: #f1efef;
+  	padding: 2px;
+	width: 100%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+
+@media screen and (max-width: 625px) {
+.detail-custodia-wrapper {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+  	/*background-color: #ffa500;*/
+	/*padding: 10px;*/
+ 	/*margin: 5px;*/
+	width: 100%;
+	text-align:left;
+
+}
+}
+
+.card-itramits {
+    display: grid;
+	grid-template-columns: 10% auto 30% 30%;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f8f9fa;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.45rem;
+    padding: 5px;
+}
+
+.wrapper-modelos-doc {
+	display: grid;
+  	grid-template-columns: auto auto;
+  	background-color: #ffffff;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+  	padding: 2px;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+	.wrapper-modelos-doc {
+		grid-template-columns: 100%;
+	}
+	}
+	
+/* ---------------------------- Colores estado expedientes ----------------------------------------*/
+
+.btn-itramits-aceptar {
+	background-color: #1ab394;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-aceptar:hover {
+	cursor: pointer;
+}
+
+.btn-itramits {
+	width: 95%;
+	font-size: .8em !important;
+}
+/*
+.btn-itramits-pendiente {
+	background-color: #f6b26b;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-enCurso {
+	background-color: #FAF26D;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-emitirResolucion {
+	background-color: #af794d;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-resolucionEmitida {
+	background-color: #3d2517;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-inicioConsultoria {
+	background-color: #0b5b61;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-aprobado {
+	background-color: #1A0BF3;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-denegado {
+	background-color: #FF5733;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-desestimiento {
+	background-color: #E5E1DE;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-nohapasadoREC {
+	background-color: #e21313;
+	color:rgba(255, 255, 255, 1) !important;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-requerido {
+	background-color: #e213c2;
+	color:rgba(255, 255, 255, 1) !important;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+
+.btn-itramits-justificado {
+	background-color: #30EF12;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-pendienteJustificar {
+	background-color: #7EB505;
+	color: #ffffff;
+	font-size: .8em !important;
+	width: 95%;
+	min-height: 24px;
+}
+.btn-itramits-finalizado {
+	background-color: #ffffff;
+	border: 2px solid #270!important;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !important;
+}
+.btn-itramits-enmienda {
+	background-color: #6DDAFA;
+	color: #000000;
+	width: 95%;
+	font-size: .8em !Important;
+}
+.btn-itramits-info {
+	font-weight: bold;
+	color: #ffffff;
+	width: 95%;
+	font-size: .8em !Important;
+}
+*/
+/* ----------------------------- detalle expediente -----------------------------------------------*/
+.general {
+	background-color: #888;
+	padding-left: 5px;
+	padding-right: .5rem;
+	padding-top: 2px;
+	padding-bottom: 15px;
+}
+.solicitud_cab {
+	background-color: #f6b26b;
+	color:#000;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.documentosSolicitud {
+	background-color: #a3d4db;
+}
+.solicitud {
+	background-color: #f6b26b;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1.5rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.validacion_cab {
+	background-color: #00ff00;
+	color:#000;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.validacion {
+	background-color: #00ff00;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1.5rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.ejecucion_cab {
+	background-color: #6d9eeb;
+	color:#000;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.ejecucion {
+	background-color: #e2f702;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1.5rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.justificacion_cab {
+	background-color: #a64d79;
+	color:#000;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.justificacion {
+	background-color: #a64d79;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1.5rem;
+	width:100%;
+	border-radius: 0!important;
+}
+.desistimiento_cab {
+	background-color: #8e7cc3;
+	color:#000;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	width:100%;
+	border-left: #000 solid 4px;
+}
+.desistimiento {
+	background-color: #8e7cc3;
+	color:#000;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .2rem;
+	padding-bottom: 1.5rem;
+	width:100%;
+	border-radius: 0!important;
+}
+input:focus {
+	background-color: #fda500 !important;
+	color: rgb(255, 255, 255) !important;
+	font-weight: bold !important;
+	border: #000 solid 1px !important;
+}
+#estat_signatura:hover {
+	opacity: .9;
+	color: #fda500;
+	font-weight: 800;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* ------------------------------------------------------------------------------------------------*/
+/* ----------------------------- Tablas de documentos ---------------------------------------------*/
+.header-wrapper-docs {
+	display: inline-grid;
+  	grid-template-columns: 10% 40% 30% 20%;
+  	background-color: #fda500;
+  	padding: .8rem;
+	width: 100%;
+}
+@media screen and (max-width: 625px) {
+.header-wrapper-docs {
+	display:  none;
+  	grid-template-columns: auto;
+  	background-color: #fda500;
+  	padding: 10px;
+	width: 100%;
+	text-align: right;
+}
+}
+
+.header-wrapper-docs-col {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	text-align: left;
+}
+
+.detail-wrapper-docs {
+	display: inline-grid;
+  	grid-template-columns: 10% 40% 30% 20%;
+  	background-color: #2196F3;
+  	padding: .8rem;
+	font-size: 1rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 625px) {
+.detail-wrapper-docs {	
+	display: inline-grid;
+  	grid-template-columns: auto;
+  	background-color: #ffa500;
+	padding: 10px;
+ 	margin: 5px;
+	width: 100%;
+	text-align:left;
+}
+}
+
+.detail-wrapper-docs-col {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: .8rem;
+  font-size: 1rem;
+}
+/* ----------------------------- Ventana modal ---------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
